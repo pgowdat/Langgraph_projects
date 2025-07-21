@@ -122,6 +122,7 @@ msg = "Using the current price tell me the total price of 10 RIL stocks and add 
 graph.invoke({"messages": [{"role": "user", "content": msg}]}, config=config1)
 
 Because we use the same config1, the agent retrieves the history for thread_id: '1'. It understands what "previous total cost" refers to, fetches the price for RIL, and adds the new amount to the old total.
+	
 Conversation 2: thread_id: '2' (A Separate Chat)
 This thread runs in parallel and is completely independent of the first one.
 	• First Turn:
@@ -157,4 +158,4 @@ graph.invoke({"messages": [{"role": "user", "content": msg}]}, config=config2)
 	 Sources
 	
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
-![Uploading image.png…]()
+<img width="1007" height="4458" alt="image" src="https://github.com/user-attachments/assets/9c1f7f4a-3dc5-45a2-96a5-ba7182cdf038" />
