@@ -1,6 +1,6 @@
 Here's a well-formatted and comprehensive **`README.md`** file for your Tool Call Agent project, incorporating all the information you provided. This README is Markdown-compliant and structured with sections, code blocks, and emojis for clear documentation.
 
-# 🧠 Tool Call Agent with Memory
+# 🧠 Tool Call Agent
 
 This project demonstrates how to build a simple yet powerful **conversational agent** using [LangChain](https://github.com/langchain-ai/langchain) and [LangGraph](https://github.com/langchain-ai/langgraph). The agent can answer general questions and dynamically invoke **custom tools** (such as fetching real-time stock prices) as needed. It also supports **memory and multi-threaded conversations**, enabling contextual understanding across multiple sessions.
 
