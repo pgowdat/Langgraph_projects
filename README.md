@@ -16,7 +16,7 @@ This project shows how to build a **conversational AI agent** using [LangChain](
 
 ## Overview
 
-**Tool Call Agent** is a Python project that demonstrates:
+#Tool Call Agent is a Python project that demonstrates:
 - How to combine language models with external tools (like a stock price lookup function) using LangChain.
 - How to use LangGraph to set up the reasoning flow for when to use a tool and when to answer directly.
 - How to save and retrieve conversation history using memory, so each chat session can reference past answers and context.
@@ -74,7 +74,7 @@ Conversation logic is built as a **graph of nodes and edges**:
 **How does this help?**  
 You can easily extend the agent with more steps, decision points, or new tools by modifying the graph structure.
 
-## Using Conversation Memory
+#Using Conversation Memory
 
 To track context over multiple messages (and even different simultaneous chats), **memory** (checkpointing) is integrated:
 
