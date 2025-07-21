@@ -156,6 +156,4 @@ graph.invoke({"messages": [{"role": "user", "content": msg}]}, config=config2)
 		2. Follow-up Message: The user asks to add the cost of 5 MSFT stocks to the "previous total." The agent accesses the memory for thread_id: '2', recalling the total from the AAPL stock query. It correctly ignores everything that happened in Conversation 1.
 	In short, the two threads demonstrate that the agent can maintain distinct contexts, just like having two separate chat windows open with a chatbot.
 	 Sources
-	
------------------------------------------------------------------------------------------------------------------------------------------------------------
-<img width="1007" height="4458" alt="image" src="https://github.com/user-attachments/assets/9c1f7f4a-3dc5-45a2-96a5-ba7182cdf038" />
+
