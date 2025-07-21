@@ -86,9 +86,9 @@ This is the new, powerful feature. We introduce a checkpointer to save the state
 Python
 
 from langgraph.checkpoint.memory import MemorySaver
-# An in-memory checkpointer to save conversation states
+ An in-memory checkpointer to save conversation states
 memory = MemorySaver()
-# Compile the graph with the checkpointer
+ Compile the graph with the checkpointer
 graph = builder.compile(checkpointer=memory)
 	• MemorySaver: This is a simple checkpointer that stores all conversation histories in your computer's memory. For production, you could swap this with a persistent database like Redis or Postgres.
 	• checkpointer=memory: When compiling the graph, we connect it to our memory. Now, the graph will automatically save its state.
@@ -109,7 +109,7 @@ This thread shows how the agent remembers previous calculations.
 	• First Turn:
 Python
 
-# config1 specifies which conversation we're in
+ config1 specifies which conversation we're in
 config1 = { 'configurable': { 'thread_id': '1'} }
 msg = "I want to buy 20 AMZN stocks using current price. Then 15 MSFT. What will be the total cost?"
 graph.invoke({"messages": [{"role": "user", "content": msg}]}, config=config1)
@@ -155,5 +155,4 @@ graph.invoke({"messages": [{"role": "user", "content": msg}]}, config=config2)
 		1. First Message: The user asks for the price of 5 AAPL stocks. The agent calculates this amount and stores it in the memory for thread_id: '2'.
 		2. Follow-up Message: The user asks to add the cost of 5 MSFT stocks to the "previous total." The agent accesses the memory for thread_id: '2', recalling the total from the AAPL stock query. It correctly ignores everything that happened in Conversation 1.
 	In short, the two threads demonstrate that the agent can maintain distinct contexts, just like having two separate chat windows open with a chatbot.
-	 Sources
-
+ Sources<img width="1007" height="2528" alt="image" src="https://github.com/user-attachments/assets/49975d08-e3d0-4bf6-b26c-1665099108ff" />
